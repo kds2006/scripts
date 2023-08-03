@@ -2,7 +2,7 @@ import os
 import sys
 
 # UE5 tool: prints all uassets from the 'ifolder' into 'ofile'.
-def print_dir(ifolder, ofile='assets.txt'):
+def print_files(ifolder, ofile='assets.txt'):
 	sys.original_stdout = sys.stdout
 	with open(ofile, 'w') as f:
 		sys.stdout = f
